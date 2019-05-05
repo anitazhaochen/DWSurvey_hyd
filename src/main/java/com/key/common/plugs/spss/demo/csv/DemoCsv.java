@@ -1,7 +1,7 @@
 package com.key.common.plugs.spss.demo.csv;
 
 import java.io.*;
-import com.pmstation.spss.*;
+//import com.pmstation.spss.*;
 
 public class DemoCsv {
   public static void main(String[] args){
@@ -16,7 +16,7 @@ public class DemoCsv {
 
     // Do convert from CSV to SPSS format
     try {
-      CsvToSPSS.convert(fileCSV, fileSPSS, null);
+//      CsvToSPSS.convert(fileCSV, fileSPSS, null);
     } catch (Exception e){
       e.printStackTrace();
     }

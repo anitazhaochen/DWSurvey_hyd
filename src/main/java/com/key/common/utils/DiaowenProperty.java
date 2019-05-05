@@ -13,7 +13,7 @@ import org.springframework.beans.BeansException;
 import org.springframework.beans.factory.config.ConfigurableListableBeanFactory;
 import org.springframework.beans.factory.config.PropertyPlaceholderConfigurer;
 
-import com.baidu.ueditor.ConfigManager;
+//import com.baidu.ueditor.ConfigManager;
 import com.sun.org.apache.xml.internal.security.Init;
 
 import javax.servlet.ServletContext;
