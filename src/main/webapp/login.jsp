@@ -91,7 +91,7 @@ label.error{
 						<div class="dlcTitle" >
 							<a href="#" class="dlcTitleTab crt" >登录</a>
 						</div>
-						
+
 					<div class="loginFormContent">
 						
 						<form id="loginForm" action="${ctx }/login.jsp" method="post">
@@ -167,6 +167,8 @@ label.error{
 						
 					</div>
 			</div>
+			</shiro:guest>
+
 			<shiro:user>
 				<div id="dwLoginContent">
 					<div class="dlcTitleBg" ></div>
