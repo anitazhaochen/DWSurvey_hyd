@@ -39,10 +39,10 @@
 <%-- <img alt="调问网" src="${ctx }/images/logo/logo.jpg" > --%>
 <!-- <div id="header_title">DIAOWEN-在线问卷编辑器</div> -->
 <div class="header_Item header_logo">
-		<a href="${ctx }/"><img alt="调问网" src="${ctx }/images/logo/LOGO.png" ></a>
+		<%--<a href="${ctx }/"><img alt="问卷" src="${ctx }/images/logo/LOGO.png" ></a>--%>
 		<!-- <div style="font-family: '微软雅黑';font-size:26px;padding-left:10px;">DIAOWEN&nbsp;&nbsp; </div>-->
 		&nbsp;&nbsp;
-		<span style="font-family: '微软雅黑';font-size: 16px;line-height: 46px;" id="pageHeaderSpan">在线问卷编辑器</span>
+		<span style="font-family: '微软雅黑';font-size: 16px;line-height: 46px;" id="pageHeaderSpan">问卷编辑器</span>
 </div>
 </div>
 <div id="header_right">
@@ -56,7 +56,7 @@
 <div id="tools">
 <div class="tools_tabs">
 	<div class="tools_tabs_left"><ul><li class="current" id="tools_tab1_li">基本</li></ul></div>
-	<div class="tools_tabs_right"><ul><li style="padding: 0px;font-size: 12px;line-height: 28px;"><a href="http://www.diaowen.net/buy2.jsp" target="_black" style="text-decoration: none;color: gray;">升级到高级版</a></li></ul></div>
+	<%--<div class="tools_tabs_right"><ul><li style="padding: 0px;font-size: 12px;line-height: 28px;"><a href="http://www.diaowen.net/buy2.jsp" target="_black" style="text-decoration: none;color: gray;">升级到高级版</a></li></ul></div>--%>
 </div>
 
 <div class="tools_contents">
@@ -1973,13 +1973,13 @@
 	$("input[name='showShareSurvey'][value='${survey.surveyDetail.showShareSurvey}']").attr("checked",true);
 	$("input[name='showAnswerDa'][value='${survey.surveyDetail.showAnswerDa}']").attr("checked",true);
 </script>
-<%@ include file="/WEB-INF/page/layouts/other.jsp"%>
+<%--<%@ include file="/WEB-INF/page/layouts/other.jsp"%>--%>
 <div style="text-align: center;">
 <div class="dw_foot" style="padding-bottom: 30px;">
 	<div class="footer-copyright" style="color: gray;padding-top: 0px;font-size: 16px;">
-		Powered by <a href="http://www.dwsurvey.net" target="_blank" style="text-decoration: none;color: gray;">DWSurvey</a>&nbsp;&nbsp;&nbsp;
-		Copyright © 2012-2017
-		<a href="http://www.diaowen.net" target="_blank" style="text-decoration: none;color: rgb(53, 117, 136);">调问网</a>
+		<%--Powered by <a href="http://www.dwsurvey.net" target="_blank" style="text-decoration: none;color: gray;">DWSurvey</a>&nbsp;&nbsp;&nbsp;--%>
+		<%--Copyright © 2012-2017--%>
+		<%--<a href="http://www.diaowen.net" target="_blank" style="text-decoration: none;color: rgb(53, 117, 136);">调问网</a>--%>
 	</div>
 </div>
 </div>

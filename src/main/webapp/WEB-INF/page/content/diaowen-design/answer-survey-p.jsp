@@ -579,7 +579,7 @@ label.error{
 
 
 <div class="footer-copyright footer-pb" style="color: gray;padding-bottom: 5px;">
-		Powered by <a href="http://www.diaowen.net" style="text-decoration: none;color: gray;">DWSurvey</a>&nbsp;
+		<%--Powered by <a href="http://www.diaowen.net" style="text-decoration: none;color: gray;">DWSurvey</a>&nbsp;--%>
 </div>
 		
 <div id="fixedMsg" style="position: fixed;top: 0px;width: 100%;padding: 10px;text-align: center;font-size: 18px;letter-spacing: 4px;line-height: 56px;background-color: #111;background-color: rgba(17,17,17,0.5);color: #fff;color: rgba(255,255,255,0.5);z-index: 200;display: none;"></div>
@@ -621,7 +621,7 @@ if(errorcode=="3"){
 }
 
 </script>
-<%@ include file="/WEB-INF/page/layouts/other.jsp"%>
+<%--<%@ include file="/WEB-INF/page/layouts/other.jsp"%>--%>
 
 <!-- Diaowen.net Button BEGIN -->
 	<div id="webSiteFixedRight" class="websiteFixed" style="position: fixed;right: 0px;top: 20px;z-index: 9999;">

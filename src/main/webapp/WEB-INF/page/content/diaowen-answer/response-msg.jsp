@@ -20,7 +20,7 @@
 		</div>
 		
 		<div class="footer-copyright" style="color: gray;">
-				Powered by <a href="http://www.diaowen.net" style="text-decoration: none;color: rgb(53, 117, 136);">DWSurvey</a>
+				<%--Powered by <a href="http://www.diaowen.net" style="text-decoration: none;color: rgb(53, 117, 136);">DWSurvey</a>--%>
 		</div>
 	</div>
 	

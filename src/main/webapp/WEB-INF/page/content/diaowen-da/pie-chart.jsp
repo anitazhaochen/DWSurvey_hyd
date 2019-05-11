@@ -162,7 +162,7 @@ function buildChart(statJsonId,chartdivId){
 			chart.angle = 30;
 			chart.labelText="[[title]] -[[description]]（[[percents]]%）";
 			chart.balloonText="[[title]]（[[percents]]% ）\n[[description]]([[value]])";
-			chart.addTitle("分析图-by-调问网", 12);
+			chart.addTitle("分析图", 12);
 			chart.marginTop=0;
 			chart.marginLeft=0;
 			chart.borderAlpha=1;

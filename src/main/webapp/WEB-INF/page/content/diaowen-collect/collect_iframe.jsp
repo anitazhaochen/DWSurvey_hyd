@@ -43,7 +43,7 @@
 	<div id="header" >
 		<div id="headerCenter"  class="bodyCenter">
 			<div class="header_Item header_logo">
-			<img alt="调问网" src="${ctx }/images/logo/LOGO.png" >
+			<img alt="问卷" src="${ctx }/images/logo/LOGO.png" >
 			<!-- <div style="font-family: '微软雅黑';font-size:26px;padding-left:10px;">DIAOWEN</div> -->
 			</div>
 			<div class="header_Item header_menu">

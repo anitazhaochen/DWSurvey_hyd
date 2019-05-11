@@ -517,7 +517,7 @@
   </div>
 
   <div data-role="footer" >
-  	<h3>Powered by <a href="http://diaowen.net/index-m.jsp" style="text-decoration: none;" rel="external">DWSurvey</a></h3>
+  	<%--<h3>Powered by <a href="http://diaowen.net/index-m.jsp" style="text-decoration: none;" rel="external">DWSurvey</a></h3>--%>
   </div>
 </div>
 </form>

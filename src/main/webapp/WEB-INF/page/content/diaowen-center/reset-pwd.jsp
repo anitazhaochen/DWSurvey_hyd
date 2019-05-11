@@ -70,7 +70,7 @@ $(document).ready(function(){
 				<div class="surveyCollectMiddleContent">
 					<div style="padding: 25px 45px;overflow: auto;padding-top: 35px;">
 
-							<div style="font-size: 18px;color: red;padding-bottom: 12px;">提醒：请一定要记住修改后的密码，不然您将无法进入调问问卷系统。</div>
+							<%--<div style="font-size: 18px;color: red;padding-bottom: 12px;">一定要记住修改后的密码</div>--%>
 
 							<div style="border-bottom: 1px solid #DFDFDF;padding: 5px;color: #666565;">修改密码</div>
 							<div style="padding: 5px;color:#666565; ">

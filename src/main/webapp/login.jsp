@@ -5,8 +5,8 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>调问-专业且开源的问卷表单系统</title>
-<meta name="description" content="调问问卷表单－开源且专业的调研系统" />
+<title>问卷系统</title>
+<%--<meta name="description" content="调问问卷表单－开源且专业的调研系统" />--%>
 
 <script type="text/javascript" src="${ctx }/js/plugs/jquery-ui-1.10.3.custom/js/jquery-1.10.1.js"></script>
 <script type="text/javascript" src="${ctx }/js/dw/responsive-width.js"></script>
@@ -68,21 +68,21 @@ label.error{
 </style>
 </head>
 <body style="background-color: #537088;">
-<%@ include file="/WEB-INF/page/layouts/loginbgimg.jsp"%>
+<%--<%@ include file="/WEB-INF/page/layouts/loginbgimg.jsp"%>--%>
 
 <div id="wrap" class="wrapLogin">
 
 	<input type="hidden" id="id" name="id" value="${survey.id }">
 	<input type="hidden" id="ctx" value="${ctx }">
-	<%@ include file="/WEB-INF/page/layouts/header.jsp"%>
+	<%--<%@ include file="/WEB-INF/page/layouts/header.jsp"%>--%>
 	<div style="clear: both;"></div>
 	<div id="dwBody" >
 		<div id="dwBodyContent" class="bodyCenter" style="background: none;">
 				
-					<div class="dw_login_logo">
-						<h1 class="f1">DIAOWEN</h1>
-						<h2 class="f2" style="width: 460px;">调问专业<span class="f3">、</span>开源<span class="f3">、</span>实用的调研方式</h2>
-					</div>
+					<%--<div class="dw_login_logo">--%>
+						<%--<h1 class="f1">DIAOWEN</h1>--%>
+						<%--<h2 class="f2" style="width: 460px;">调问专业<span class="f3">、</span>开源<span class="f3">、</span>实用的调研方式</h2>--%>
+					<%--</div>--%>
 					
 					
 					<shiro:guest>
@@ -114,7 +114,7 @@ label.error{
 									<label for="" class="frm_label">邮箱</label>
 									<div class="frm_controls">
 										<input id="username" type="text" class="frm-controlM" name="username" value="" >
-										<span class="frm_desc">用来登录调问网，接收到激活邮件才能完成注册</span>
+										<%--<span class="frm_desc">用来登录调问网，接收到激活邮件才能完成注册</span>--%>
 									</div>
 								</div>
 								<div class="frmItem">
@@ -154,21 +154,19 @@ label.error{
 									<%--<a class="dw_style_a_1" tabindex="3" href="#">记住密码</a>--%>
 									<%--<a class="dw_style_a_1" href="${ctx }/pwd/findPwd.jsp" target="_blank" style="float: right;">忘记密码</a>--%>
 								</div>
-								<!-- 
 								<div class="frmItem" style="padding: 10px 5px;">
 									<label for="" class="frm_label">&nbsp;</label>
-									还没有账号&nbsp;&nbsp;<a href="">免费注册</a>
-								</div> -->
+									还没有账号&nbsp;&nbsp;<a href="http://localhost:8080/DWSurvey_war_exploded/sy/user/user-admin!input.action">免费注册</a>
+								</div>
 						</div>
 						<div class="dlcRight">
-							<%@ include file="/WEB-INF/page/layouts/admin-info.jsp"%>
+							<%--<%@ include file="/WEB-INF/page/layouts/admin-info.jsp"%>--%>
 						</div>
 						</div>
 						</form>
 						
 					</div>
 			</div>
-			</shiro:guest>
 			<shiro:user>
 				<div id="dwLoginContent">
 					<div class="dlcTitleBg" ></div>
@@ -196,17 +194,17 @@ label.error{
 		</div>
 	</div>
 	
-	<div class="dw_foot" style="padding-top:15px;">
+	<%--<div class="dw_foot" style="padding-top:15px;">--%>
 		<!-- 必须保留声明 start -->
-	<div class="footer-copyright" style="color: gray;padding-top: 0px;font-size: 16px;">
-		Powered by <a href="http://www.dwsurvey.net" style="text-decoration: none;color: gray;">DWSurvey</a>
-		&nbsp;&nbsp;&nbsp;Copyright © 2012-2017
-		<a href="http://www.diaowen.net" style="text-decoration: none;color: rgb(53, 117, 136);">调问网</a>
-	</div>
+	<%--<div class="footer-copyright" style="color: gray;padding-top: 0px;font-size: 16px;">--%>
+		<%--Powered by <a href="http://www.dwsurvey.net" style="text-decoration: none;color: gray;">DWSurvey</a>--%>
+		<%--&nbsp;&nbsp;&nbsp;Copyright © 2012-2017--%>
+		<%--<a href="http://www.diaowen.net" style="text-decoration: none;color: rgb(53, 117, 136);">调问网</a>--%>
+	<%--</div>--%>
 		<!-- 必须保留声明 end -->
-	</div>
+	<%--</div>--%>
 	
-	</div>
+	<%--</div>--%>
 <script type="text/javascript">
 resizeBodyWidth();
 $(".dlcTitleBg").animate({opacity:0.6},0);

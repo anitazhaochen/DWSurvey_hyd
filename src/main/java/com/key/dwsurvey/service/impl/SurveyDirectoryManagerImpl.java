@@ -91,7 +91,7 @@ public class SurveyDirectoryManagerImpl extends BaseServiceImpl<SurveyDirectory,
 					}
 				}else{
 					surveyDetail=new SurveyDetail();
-					surveyDetail.setSurveyNote("非常感谢您的参与！如有涉及个人信息，我们将严格保密。");
+					surveyDetail.setSurveyNote("感谢参与");
 				}
 				surveyDetail.setDirId(t.getId());
 				surveyDetailManager.save(surveyDetail);

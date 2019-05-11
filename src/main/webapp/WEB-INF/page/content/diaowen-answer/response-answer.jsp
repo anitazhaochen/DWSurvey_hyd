@@ -430,6 +430,6 @@
 	</div>
 </div>
 
-<%@ include file="/WEB-INF/page/layouts/other.jsp"%>
+<%--<%@ include file="/WEB-INF/page/layouts/other.jsp"%>--%>
 </body>
 </html>
