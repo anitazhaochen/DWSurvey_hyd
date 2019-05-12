@@ -17,5 +17,11 @@
 	<!--<package name="dw-default" extends="struts-default" namespace="/" >
 		<global-allowed-methods>regex:.*</global-allowed-methods>
 	</package>-->
+	<package name="default" namespace="/" extends="struts-default">
+		<action name="RegisterAction" method="register" class="com.key.common.plugs.security.RegisterAction">
+		</action>
+
+
+	</package>
 
 </struts>

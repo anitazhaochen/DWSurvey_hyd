@@ -22,7 +22,8 @@ import java.util.List;
 @Results({
 	@Result(name= CrudActionSupport.SUCCESS,location="/WEB-INF/page/content/diaowen-useradmin/list.jsp",type= Struts2Utils.DISPATCHER),
 	@Result(name= CrudActionSupport.INPUT,location="/WEB-INF/page/content/diaowen-useradmin/input.jsp",type= Struts2Utils.DISPATCHER),
-	@Result(name= CrudActionSupport.RELOAD,location="/sy/user/user-admin.action",type= Struts2Utils.REDIRECT)
+//	@Result(name= CrudActionSupport.RELOAD,location="/sy/user/user-admin.action",type= Struts2Utils.REDIRECT)
+	@Result(name= CrudActionSupport.RELOAD,location="/sy/user/user-admin.action",type= "redirect")
 })
 @AllowedMethods({"checkLoginNamelUn","checkEmailUn"})
 public class UserAdminAction extends CrudActionSupport<User, String> {
@@ -54,8 +55,14 @@ public class UserAdminAction extends CrudActionSupport<User, String> {
 	@Override
 	public String save() throws Exception {
 		HttpServletRequest request= Struts2Utils.getRequest();
+		System.out.println("wwwwwwwwwwwwwwwwwwwwwwww\n\n\n");
+
+		System.out.println(entity);
+
+
+		System.out.println("wwwwwwwwwwwwwwwwwwwwwwww\n\n\n");
 		userManager.adminSave(entity,null);
-		return RELOAD;
+		return "login";
 	}
 
 	/**

@@ -40,11 +40,13 @@
 		</property>
 		<property name="filterChainDefinitions">
 			<value>
+				/register.jsp = anon
 				/login.jsp = authc
 				/ic/** = user
 				/design/** = user
 				/da/** = user
-				/sy/** = roles[admin]
+				<!--/sy/** = roles[admin]-->
+				/sy/user/user-admin!input.action = anon
 			</value>
 		</property>
 	</bean>

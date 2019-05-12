@@ -52,16 +52,16 @@
 	</filter-mapping>
 	
 	  <!-- 配置Java Xss保护过滤器 -->
-    <filter>
-        <filter-name>xssFilter</filter-name>
-        <filter-class>com.key.common.plugs.xss.XssFilter</filter-class>
-    </filter>
-    <filter-mapping>
-		<filter-name>xssFilter</filter-name>
-		<url-pattern>*.action</url-pattern>
-		<dispatcher>REQUEST</dispatcher>
-		<dispatcher>FORWARD</dispatcher>
-	</filter-mapping>
+    <!--<filter>-->
+        <!--<filter-name>xssFilter</filter-name>-->
+        <!--<filter-class>com.key.common.plugs.xss.XssFilter</filter-class>-->
+    <!--</filter>-->
+    <!--<filter-mapping>-->
+		<!--<filter-name>xssFilter</filter-name>-->
+		<!--<url-pattern>*.action</url-pattern>-->
+		<!--<dispatcher>REQUEST</dispatcher>-->
+		<!--<dispatcher>FORWARD</dispatcher>-->
+	<!--</filter-mapping>-->
 
 	<!-- Hibernate Open Session In View filter -->
 	<filter>

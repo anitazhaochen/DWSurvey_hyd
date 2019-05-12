@@ -1,6 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
- <%@include file="/common/taglibs.jsp" %>
+ <%@include file="common/taglibs.jsp" %>
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
@@ -156,7 +156,7 @@ label.error{
 								</div>
 								<div class="frmItem" style="padding: 10px 5px;">
 									<label for="" class="frm_label">&nbsp;</label>
-									还没有账号&nbsp;&nbsp;<a href="http://localhost:8080/DWSurvey_war_exploded/sy/user/user-admin!input.action">免费注册</a>
+									还没有账号&nbsp;&nbsp;<a href="http://localhost:8080/DWSurvey_war_exploded/register.jsp">免费注册</a>
 								</div>
 						</div>
 						<div class="dlcRight">

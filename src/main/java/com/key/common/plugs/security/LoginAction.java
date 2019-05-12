@@ -12,6 +12,7 @@ import javax.servlet.http.HttpServletResponse;
 import com.key.common.base.entity.User;
 import com.key.common.base.service.AccountManager;
 import com.key.common.utils.web.Struts2Utils;
+import com.key.dwsurvey.action.sysuser.UserAction;
 import org.apache.shiro.SecurityUtils;
 import org.apache.shiro.authc.AuthenticationException;
 import org.apache.shiro.authc.IncorrectCredentialsException;
@@ -33,9 +34,10 @@ import com.opensymphony.xwork2.ActionSupport;
  */
 @Namespace("/")
 @Results({
-	@Result(name = "login", location = "login.jsp", type = "redirect")
+	@Result(name = "login", location = "login.jsp", type = "redirect"),
+	@Result(name = "register", location = "register.jsp"),
 	})
-@AllowedMethods({"login","logout"})
+@AllowedMethods({"login","logout","register"})
 public class LoginAction extends ActionSupport {
 
 	private static final long serialVersionUID = 7392913081177740732L;
@@ -43,7 +45,27 @@ public class LoginAction extends ActionSupport {
 	private FormAuthenticationWithLockFilter formAuthFilter;
 	@Autowired
 	protected AccountManager accountManager;
-	
+
+	public String getName() {
+		return name;
+	}
+
+	public void setName(String name) {
+		this.name = name;
+	}
+
+	private String name;
+
+	public String registered() {
+		System.out.println("2222222222222222222222222222222");
+		System.out.println("register!!!!!!!!!!!!!!!!! ");
+		System.out.println(name);
+		HttpServletRequest request = Struts2Utils.getRequest();
+		HttpServletResponse response = Struts2Utils.getResponse();
+
+		return null;
+	}
+
 	public String login() throws Exception {
 		
 		System.out.println("username1-1");
@@ -122,8 +144,50 @@ public class LoginAction extends ActionSupport {
 	}
 	
 	public String register() throws Exception {
-		
-		return "";
+		System.out.println("2222222222222222222222222222222");
+		System.out.println("register!!!!!!!!!!!!!!!!! ");
+		HttpServletRequest request = Struts2Utils.getRequest();
+		HttpServletResponse response = Struts2Utils.getResponse();
+
+		Subject subject = SecurityUtils.getSubject();
+		boolean isAuth = subject.isAuthenticated();
+		// 返回成功与否
+		String error="";
+		Long resetnum=0L;
+		if (!isAuth) {
+			String username = request.getParameter("loginName");
+			String password = request.getParameter("name");
+			System.out.println(username+" "+password);
+//			UsernamePasswordToken token = new UsernamePasswordToken(username,
+//					password);
+//			if(!formAuthFilter.checkIfAccountLocked(request)){
+//				try {
+//					subject.login(token);
+//					formAuthFilter.resetAccountLock(username);
+//					isAuth = true;
+//				}catch (IncorrectCredentialsException e) {
+//					formAuthFilter.decreaseAccountLoginAttempts(request);
+//					isAuth = false;
+//					error="IncorrectCredentialsException";
+//					resetnum=formAuthFilter.getAccountLocked(username);
+//				} catch (AuthenticationException e) {
+//					isAuth = false;
+//					error="AuthenticationException";
+//				}
+			}else{
+				//ExcessiveAttemptsException超过登录次数
+				error="ExcessiveAttemptsException";
+			}
+//		}
+		//PrintWriter writer = response.getWriter();
+		//writer.write(isAuth + ","+error);//此种方式，在$.getJson()进行仿问时会出现不执行回调函数
+//		System.out.println(isAuth+","+error);
+//		response.setContentType("text/plain");// 1.设置返回响应的类型
+		//2. 01 一定要注意：要包括jsoncallback参数，不然回调函数不执行。
+		//2. 02 返回的数据一定要是严格符合json格式 ，不然回调函数不执行。
+//		response.getWriter().write( request.getParameter("jsoncallback") + "({isAuth:'"+isAuth+"',error:'"+error+"',resetnum:'"+resetnum+"'})" );
+		return SUCCESS;
+		// 跳转到成功页面
 	}
 
 }
