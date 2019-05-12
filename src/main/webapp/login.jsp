@@ -156,7 +156,7 @@ label.error{
 								</div>
 								<div class="frmItem" style="padding: 10px 5px;">
 									<label for="" class="frm_label">&nbsp;</label>
-									还没有账号&nbsp;&nbsp;<a href="http://localhost:8080/DWSurvey_war_exploded/register.jsp">免费注册</a>
+									还没有账号&nbsp;&nbsp;<a href="register.jsp">免费注册</a>
 								</div>
 						</div>
 						<div class="dlcRight">
